@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="pub_mediator" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" singleton="true">
+    <option name="arguments" value="-v" />
+    <option name="filePath" value="$PROJECT_DIR$/bin/main.dart" />
+    <option name="workingDirectory" value="$PROJECT_DIR$" />
+    <method />
+  </configuration>
+</component>
