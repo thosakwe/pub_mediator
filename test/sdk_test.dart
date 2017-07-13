@@ -12,7 +12,7 @@ main() {
       });
 
   test('mismatching sdk', () async {
-    var d = await diagnoseConflicts(project, concurrency: 1, verbose: true);
+    var d = await diagnoseConflicts(project, verbose: true);
     expect(d.conflicts, hasLength(1));
     expect(d.conflicts.first.type, DependencyConflictType.SDK);
     expect(d.conflicts.first.sdkRequirements, hasLength(2));

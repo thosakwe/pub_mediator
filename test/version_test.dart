@@ -11,7 +11,7 @@ main() {
   });
 
   test('mismatching crypto', () async {
-    var d = await diagnoseConflicts(project, concurrency: 1, verbose: true);
+    var d = await diagnoseConflicts(project, verbose: true);
     describeDiagnosis(d);
     expect(d.conflicts, hasLength(1));
     expect(d.conflicts.first.type, DependencyConflictType.PACKAGE);

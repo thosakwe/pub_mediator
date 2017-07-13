@@ -25,9 +25,8 @@ final String resolvedGit = (() {
   throw 'You have no "git" executable available in your PATH. pub_mediator requires the availability of Git.';
 })();
 
-// TODO: Split into isolates
 Future<DependencyDiagnosis> diagnoseConflicts(PubSpec projectPubspec,
-    {@required int concurrency, @required bool verbose}) {
+    {@required bool verbose}) {
   // Resolve all requirements
   List<String> processed = [];
   Map<String, List<DependencyRequirement>> requirements = {};
@@ -131,8 +130,7 @@ Future<DependencyDiagnosis> diagnoseConflicts(PubSpec projectPubspec,
         return a;
       });
 
-      if (pkgConflict != null)
-        d.conflicts.add(pkgConflict);
+      if (pkgConflict != null) d.conflicts.add(pkgConflict);
     });
 
     return d;

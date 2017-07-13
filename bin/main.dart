@@ -11,14 +11,12 @@ main(List<String> args) async {
     if (result['help']) {
       printHelp(stdout);
     } else {
-      var concurrency = int.parse(result['concurrency'] ?? '',
-          onError: (_) => Platform.numberOfProcessors - 1);
       var dir = result.rest.isEmpty
           ? Directory.current
           : new Directory(result.rest.first);
       var pubspec = await PubSpec.load(dir);
-      var diagnosis = await diagnoseConflicts(pubspec,
-          concurrency: concurrency, verbose: result['verbose']);
+      var diagnosis =
+          await diagnoseConflicts(pubspec, verbose: result['verbose']);
       describeDiagnosis(diagnosis);
       new TextPen().normal().text('Done at ${new DateTime.now()}.').call();
     }
