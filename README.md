@@ -4,6 +4,8 @@
 
 Diagnoses version conflicts between dependencies in Dart packages.
 
+Try the [Web-based version](http://mediator.thosakwe.com/)!
+
 # About
 Without `mediator`, it is rather cumbersome to resolve dependency conflicts within Dart projects.
 You would receive a relatively cryptic error message that doesn't tell you much in the way of
