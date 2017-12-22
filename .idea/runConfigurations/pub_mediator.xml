@@ -2,10 +2,9 @@
   <configuration default="false" name="pub_mediator" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" singleton="true">
     <option name="arguments" value="-v" />
     <option name="envs">
-      <entry key="PUB_HOSTED_URL1" value="https://pub.dartlang.org/api" />
+      <entry key="PUB_HOSTED_URL_SAMPLE" value="https://pub.dartlang.org/api" />
     </option>
     <option name="filePath" value="$PROJECT_DIR$/bin/main.dart" />
-    <option name="workingDirectory" value="$PROJECT_DIR$/../tetraodon" />
     <method />
   </configuration>
 </component>
