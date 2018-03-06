@@ -140,7 +140,7 @@ Future<DependencyDiagnosis> diagnoseConflicts(PubSpec projectPubspec,
 Future<PubSpec> resolvePubspec(String packageName, DependencyReference dep,
     Directory tempDir, bool verbose) async {
   var pubHosted =
-      Platform.environment['PUB_HOSTED_URL'] ?? 'https://pub.dartlang.org/api';
+  (Platform.environment['PUB_HOSTED_URL'] ?? 'https://pub.dartlang.org') + '/api';
 
   if (dep is HostedReference) {
     var client = new http.Client();

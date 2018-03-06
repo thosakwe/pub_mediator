@@ -1,2 +1,35 @@
 analyzer:
-  strong-mode: true
+  strong-mode:
+      implicit-casts: false
+      implicit-dynamic: false
+#  exclude:
+#     - lib/**/**.g.dart
+#     - tool/**.dart
+  errors:
+      strong_mode_down_cast_composite: error
+      always_declare_return_types: error
+      assignment_to_const: error
+      assignment_to_final: error
+      await_only_futures: error
+      control_flow_in_finally: error
+      empty_statements: error
+      hash_and_equals: error
+      implementation_imports: error
+      invalid_assignment: error
+      iterable_contains_unrelated_type: error
+      list_remove_unrelated_type: error
+      literal_only_boolean_expressions: error
+      missing_return: error
+      no_duplicate_case_values: error
+      not_enough_required_arguments: error
+      recursive_getters: error
+      test_types_in_equals: error
+      type_annotate_public_apis: error
+      undefined_class: error
+      undefined_function: error
+      undefined_method: error
+      unnecessary_getters_setters: error
+      unnecessary_lambdas: error
+      unrelated_type_equality_checks: error
+      unused_local_variable: error
+      valid_regexps: error
