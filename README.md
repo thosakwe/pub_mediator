@@ -1,3 +1,6 @@
+# ARCHIVED
+Dart 2.0 includes a much-improved version solver, which renders `pub_mediator` obsolete. Therefore, I've decided to sunset this project. The source, however, will remain here.
+
 # pub_mediator
 [![Pub](https://img.shields.io/pub/v/pub_mediator.svg)](https://pub.dartlang.org/packages/pub_mediator)
 [![build status](https://travis-ci.org/thosakwe/pub_mediator.svg)](https://travis-ci.org/thosakwe/pub_mediator)
